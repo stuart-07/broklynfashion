@@ -498,7 +498,22 @@ header h1 {
     border-radius: 20px;
     padding: 8px 12px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    width: 90%;  /* Makes the container width responsive */
+    max-width: 400px;  /* Limit the width on larger screens */
 }
+
+@media screen and (max-width: 768px) {
+    .search-container {
+        width: 80%;  /* Adjust width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search-container {
+        width: 95%;  /* Further adjust for very small screens */
+    }
+}
+
 
 .search-container input {
     border: none;
